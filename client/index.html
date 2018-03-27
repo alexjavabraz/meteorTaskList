@@ -1,0 +1,16 @@
+<head></head>
+
+    <body>
+        <header class="container">
+            {{> header}}
+        </header>
+        <main class="container">
+            {{#if currentUser}}
+                {{> novo}}
+                {{> lista}}
+            {{else}}
+                Voce deve se logar primeiro
+            {{/if}}
+        </main>
+    </body>
+
